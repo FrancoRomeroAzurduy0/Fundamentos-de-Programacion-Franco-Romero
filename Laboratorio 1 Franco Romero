@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip> // Para poder usar setprecision
+
+using namespace std;
+
+int main() {
+    // Declaración de variables
+    float precio, totalVenta;
+    int cantidad;
+
+    // Entrada de datos
+    cout << "Ingrese el precio unitario del producto: ";
+    cin >> precio;
+    
+    cout << "Ingrese la cantidad vendida: ";
+    cin >> cantidad;
+
+    // Proceso: calcular el total de ventas
+    totalVenta = precio * cantidad;
+
+    // Salida: mostrar el total de ventas con dos decimales
+    cout << "El total de ventas del dia es: " << fixed << setprecision(2) << totalVenta << endl;
+
+    return 0;
+}
